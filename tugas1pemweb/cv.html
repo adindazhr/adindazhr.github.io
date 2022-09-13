@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CV</title>
+	<link rel="stylesheet" href="cv.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karla&family=Libre+Baskerville&family=Poppins:wght@500&family=Prata&family=Work+Sans:wght@500;600&family=Yeseva+One&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/8dd211d4aa.js" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		
+
+		function openNav()
+		{
+		  document.getElementByClass("sidebar").style.width = "250px";
+		  document.getElementByClass("main_content").style.marginLeft = "250px";
+		}
+
+		function closeNav()
+		{
+		  document.getElementByClass("sidebar").style.width = "0";
+		  document.getElementByClass("main_content").style.marginLeft= "0";
+		}
+
+		function opencloseNav()
+		{
+			let openNav = 1;
+			if(openNav == 1)
+			{
+			  document.querySelector('button').onclick = closeNav();
+			  openNav=0;
+			}
+			else
+			{
+			  document.querySelector('button').onclick = openNav();
+			  openNav=1;
+			}
+		}
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+	    <div class="sidebar">
+	    	<button onclick="opencloseNav()"><i class="fas fa-chevron-right"></i></button>
+	    	<img src="https://i.ibb.co/fDfdwvf/canva-photo-editor-1.png" id="pasphoto">
+	        <h2>Adinda Zahra Pamuji</h2>
+	        <ul>
+	            <li><a href="#AboutMe"><i class="fas fa-user-circle"></i>About Me</a></li>
+	            <li><a href="#Education"><i class="fas fa-user-graduate"></i>Education</a></li>
+	            <li><a href="#skill" style="vertical-align: center;"><img src="https://img.icons8.com/ios-filled/18/ffffff/analyzing-skill.png"/>&nbsp;Skill</a></li>
+	            <li><a href="#CommitteeExperience"><i class="fas fa-users"></i>Committee Experience</a></li>
+	            <li><a href="#OrganizationalExperience"><i class="fas fa-sitemap"></i>Organizational Experience</a></li>
+	            <li><a href="#Strength"><i class="fas fa-user-plus"></i>Strength</a></li>
+	            <li><a href="#Weakness"><i class="fas fa-user-minus"></i>Weakness</a></li>
+	        </ul> 
+	        <div class="social_media">
+	          <a href="https://www.linkedin.com/in/adinda-zahra-pamuji-83684a206"><i class="fab fa-linkedin-in"></i></a>
+	          <a href="https://www.instagram.com/adindazahra19/"><i class="fab fa-instagram"></i></a>
+	      </div>
+	    </div>
+	    <div class="main_content"> 
+	        <div class="info">
+	        	<div class="AboutMe" id="AboutMe">
+	        		<h2>About Me</h2>
+	        		<p>Nama saya Adinda Zahra Pamuji dan saat ini saya berusia 18 tahun. Memasuki dunia perkuliahan, saya sadar saya harus keluar dari zona nyaman. Sehingga, saya mencoba mengikuti banyak kegiatan. Saya mampu berbahasa Inggris, baik tulisan maupun lisan. Dengan sifat saya yang mampu bekerja sama dalam tim, saya yakin dapat berkontribusi dengan baik.</p>
+	        	</div>
+	        	<div class="Education" id="Education">
+	        		<h2>Education</h2>
+	        		<table>
+						<tr style="font-weight: bold;">
+							<td>2020-Present&ensp;</td>
+							<td>|</td>
+							<td>&ensp;Institut Teknologi Sepuluh Nopember</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="keterangan">Teknik Informatika</td>
+						</tr>
+						<tr style="font-weight: bold;">
+							<td>2017-2020&ensp;</td>
+							<td>|</td>
+							<td>&ensp;SMAN 2 Kota Tangerang Selatan</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="keterangan">IPA</td>
+						</tr>
+					</table>
+	        	</div>
+	        	<div class="skill" id="skill">
+	        		<h2>Skill</h2>
+	        		<table>
+	        			<tr>
+	        				<td><i class="fas fa-file-word fa-3x" id="word"></i><span>Microsoft Word</span></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        			</tr>
+	        			<tr>
+	        				<td><img src="https://img.icons8.com/color/70/000000/c-programming.png"/><span>C</span></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        			</tr>
+	        			<tr>
+	        				<td><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/70/000000/external-html-responsive-web-design-justicon-lineal-color-justicon.png"/><span>HTML</span></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        			</tr>
+	        			<tr>
+	        				<td><img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-css-file-file-type-justicon-lineal-color-justicon.png"/><span>CSS</span></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        			</tr>
+	        			<tr>
+	        				<td><img src="https://img.icons8.com/ios-filled/70/4a90e2/javascript.png"/><span>JavaScript</span></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="fas fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        				<td class="circle"><i class="far fa-circle fa-2x"></i></td>
+	        			</tr>
+	        		</table>
+	        	</div>
+	        	<div class="CommitteeExperience" id="CommitteeExperience">
+	        		<h2>Committee Experience</h2>
+	        		<table>
+						<tr style="font-weight: bold;">
+							<td>2021&ensp;</td>
+							<td>|</td>
+							<td>&ensp;ILITS Forda Benefits 2021</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="keterangan">Staff Divisi Registrasi Perwakilan Forda Tangerang</td>
+						</tr>
+						<tr style="font-weight: bold;">
+							<td>2021&ensp;</td>
+							<td>|</td>
+							<td>&ensp;SCHEMATICS 2021</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="keterangan">Staff SCHEMATICS NST 2021</td>
+						</tr>
+					</table>
+	        	</div>
+	        	<div class="OrganizationalExperience" id="OrganizationalExperience">
+	        		<h2>Organizational Experience</h2>
+	        		<table>
+						<tr style="font-weight: bold;">
+							<td>2021-Present&ensp;</td>
+							<td>|</td>
+							<td>&ensp;BENEFITS</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="keterangan">Staff Dalam Negeri Forum Daerah Benefits 2021</td>
+						</tr>
+						<tr style="font-weight: bold;">
+							<td>2021-Present&ensp;</td>
+							<td>|</td>
+							<td>&ensp;UKM IFLS</td>
+						</tr>
+						<tr>
+							<td colspan="3" class="keterangan">Staff Internal UKM IFLS 2021</td>
+						</tr>
+					</table>
+	        	</div>
+	        	<div class="Strength" id="Strength">
+	        		<h2>Strength</h2>
+	        		<table>
+	        			<tr>
+	        				<td><i class="fas fa-asterisk"></i></td>
+	        				<td>Mudah beradaptasi</td>
+	        			</tr>
+	        			<tr>
+	        				<td><i class="fas fa-asterisk"></i></td>
+	        				<td>Dapat bekerja sama dengan baik di dalam tim</td>
+	        			</tr>
+	        			<tr>
+	        				<td><i class="fas fa-asterisk"></i></td>
+	        				<td>Mudah Beradaptasi</td>
+	        			</tr>
+	        		</table>
+	        	</div>
+	        	<div class="Weakness" id="Weakness">
+	        		<h2>Weakness</h2>
+	        		<table>
+	        			<tr>
+	        				<td><i class="fas fa-asterisk"></i></td>
+	        				<td>Kurang percaya diri</td>
+	        			</tr>
+	        			<tr>
+	        				<td><i class="fas fa-asterisk"></i></td>
+	        				<td>Kurangnya skill public speaking</td>
+	        			</tr>
+	        			<tr>
+	        				<td><i class="fas fa-asterisk"></i></td>
+	        				<td>Memendam masalah sendiri</td>
+	        			</tr>
+	        		</table>
+	        	</div>
+	      </div>
+	    </div>
+	</div>
+</body>
+</html>
