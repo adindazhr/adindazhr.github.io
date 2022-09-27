@@ -1,0 +1,235 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <title>Sign in</title>
+  <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div class="main">
+    <p class="sign" align="center">FORMULIR REGISTRASI PESERTA</p>
+    <form class="form1">
+      <div class="form-group">
+        <label for="namaLengkap">Nama Lengkap & Gelar</label>
+        <span><input class="un " type="text" align="center" placeholder="Budi, S.T."></span>
+      </div>
+      <div class="form-group">
+        <label for="kota">Asal Instansi / Kota</label>
+        <span><input class="un" type="text" align="center" placeholder="ITS / Surabaya"></span>
+      </div>
+      <div class="form-group">
+        <label for="Alamat">Alamat</label>
+        <span><textarea class="un" name="Alamat" cols="40" rows="5" placeholder="Jl. Cendrawasih No 19"></textarea></span>
+      </div>
+      <div class="form-group">
+        <label for="kodepos">Kode Pos</label>
+        <span><input class="un" type="text" align="center" placeholder="60112"></span>
+      </div>
+      <div class="center">
+        <div class="form-group">
+            <label for="Provinsi">Provinsi</label>
+            <span>
+                <select class="un" tabindex="-98" name="regional_code" required="">
+                    <option value="11">
+                        ACEH
+                    </option>
+                    <option value="12">
+                        SUMATERA UTARA
+                    </option>
+                    <option value="13">
+                        SUMATERA BARAT
+                    </option>
+                    <option value="14">
+                        R I A U
+                    </option>
+                    <option value="15">
+                        J A M B I
+                    </option>
+                    <option value="16">
+                        SUMATERA SELATAN
+                    </option>
+                    <option value="17">
+                        BENGKULU
+                    </option>
+                    <option value="18">
+                        LAMPUNG
+                    </option>
+                    <option value="19">
+                        KEPULAUAN BANGKA BELITUNG
+                    </option>
+                    <option value="21">
+                        KEPULAUAN RIAU
+                    </option>
+                    <option value="31">
+                        DKI JAKARTA
+                    </option>
+                    <option value="32">
+                        JAWA BARAT
+                    </option>
+                    <option value="33">
+                        JAWA TENGAH
+                    </option>
+                    <option value="34">
+                        DI YOGYAKARTA
+                    </option>
+                    <option value="35">
+                        JAWA TIMUR
+                    </option>
+                    <option value="36">
+                        B A N T E N
+                    </option>
+                    <option value="51">
+                        BALI
+                    </option>
+                    <option value="52">
+                        NUSA TENGGARA BARAT
+                    </option>
+                    <option value="53">
+                        NUSA TENGGARA TIMUR
+                    </option>
+                    <option value="61">
+                        KALIMANTAN BARAT
+                    </option>
+                    <option value="62">
+                        KALIMANTAN TENGAH
+                    </option>
+                    <option value="63">
+                        KALIMANTAN SELATAN
+                    </option>
+                    <option value="64">
+                        KALIMANTAN TIMUR
+                    </option>
+                    <option value="71">
+                        SULAWESI UTARA
+                    </option>
+                    <option value="73">
+                        SULAWESI SELATAN
+                    </option>
+                    <option value="74">
+                        SULAWESI TENGGARA
+                    </option>
+                    <option value="75">
+                        GORONTALO
+                    </option>
+                    <option value="76">
+                        SULAWESI BARAT
+                    </option>
+                    <option value="81">
+                        MALUKU
+                    </option>
+                    <option value="82">
+                        MALUKU UTARA
+                    </option>
+                    <option value="94">
+                        PAPUA
+                    </option>
+                    <option value="91">
+                        PAPUA BARAT
+                    </option>
+                    <option value="72">
+                        SULAWESI TENGAH
+                    </option>
+                    <option value="65">
+                        KALIMANTAN UTARA
+                    </option>
+                  </select>
+            </span>
+          </div>
+          <div class="break"></div>
+          <div class="form-group">
+            <label for="phoneNum">Nomor Telepon</label>
+            <span><input class="un" type="text" name="phonenumber"  placeholder="(+62)86254268236" id="inputPhoneNumber" onblur="validatePhoneNumber()"> </span>
+            <span class="prompt" id="inputPhoneNumberPrompt"></span>
+          </div>
+          <div class="break"></div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <span><input class="un" type="text" name="email" placeholder="helloworld@gmail.com" id="inputEmail" onblur="validateEmail()"></span>
+            <span class="prompt" id="inputEmailPrompt"></span>
+          </div>
+      </div>
+      <div class="break"></div>
+      <p class="sponsor" align="center">Sponsor</p>
+
+      <div class="break"></div>
+
+      <div class="form-group">
+        <label for="NamaPerusahaan">Nama Perusahaan</label>
+        <span><input class="un " type="text" align="center" placeholder="Buzzle"></span>
+    </div>
+    <div class="break"></div>
+    <div class="form-group">
+        <label for="alamatperusahaan">Alamat Perusahaan</label>
+        <span><textarea class="un" name="Alamat" cols="40" rows="5" placeholder="Alamat Perusahaan"></textarea></span>
+    </div>
+    <div class="form-group">
+        <label for="namakp">Nama Kontak Personal</label>
+        <span><input class="un " type="text" align="center" placeholder="Nama Kontak Personal"></span>
+    </div>
+    <div class="break"></div>
+    <div class="form-group">
+        <label for="phonenumper">Telepon Personal</label>
+        <span><input class="un" type="text" name="phonenumber"  placeholder="(+62)86254268236" id="inputPhoneNumber" onblur="validatePhoneNumber()"></span>
+        <span class="prompt" id="inputPhoneNumberPrompt"></span>
+    </div>
+    <div class="break"></div>
+    <div class="form-group">
+        <label for="emailperusahaan">Email Perusahaan</label>
+        <span><input class="un" type="text" name="email" placeholder="annajones@buzzle.com" id="inputEmail" onblur="validateEmail()"></span>
+        <span class="prompt" id="inputEmailPrompt"></span>
+    </div>
+      <div class="text1">
+        <p>Kontribusi peserta Rp. 2.500.000,- *Dua juta Lima Ratus Ribu Rupiah) belum termasuk penginapan dan akomodasi.</p>
+        <br>
+        <p>Konfirmasi Kepesertaan : </p>
+        <ul>
+            <li>
+                Sebelum 15 Januari 2012 : Rp. 2.500.000,-
+            </li>
+            <li>
+                Sesudah 15 Januari 2012 : Rp. 2.750.000,-
+            </li>
+            <li>
+                On Site : Rp. 3.000.000,-
+            </li>
+        </ul>
+        <p>Pembatakan pendaftaran :</p>
+        <ul>
+            <li>
+                Sebelum H-5 uang dikembalikan 50%
+            </li>
+            <li>
+                Sesudah H-5 uang tidak dapat dikembalikan
+            </li>
+        </ul>
+        <p>Akomodasi penginapan peserta, harga kamar kelas standar berkisar antara Rp. 250.000,- - Rp. 300.000,- )*</p>
+      </div>
+
+      <div class="transfer">
+        <p>Pendaftaan via transfer Bank ke :</p>
+        <p>Nama Bank : Bank BCA KCU Cirebon</p>
+        <p>No. Rekening : 1341015478</p>
+        <p>Atas Nama : Junaedi, S.Kep</p>
+      </div>
+      <div class="bukti">
+        <p>Bukti tranfer mohon dikirim ke alamat Sekretariat Panitia UPTD Puskemas Sitopeng</p>
+        <p>Jl. Sekarsari No. 1 Argapunya Harjamukti Kota Cirebon</p>
+        <p>atau kirim ke email : entreprenurse41@gmail.com</p>
+        <p>Konfirmasi setelah transfer ke 0813232669</p>
+      </div>
+
+      <br>
+      <br>
+      <br>
+
+      <a class="submit" align="center" >Submit</a>
+
+    </div>
+
+</body>
+
+</html>
